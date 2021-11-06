@@ -16,7 +16,7 @@
     var year = new Date().getFullYear()+parseInt(years);
     /* variable rate is created to access the element whose id is "rate" */
     var result = document.getElementById("result");
-    result.innerHTML = "If you deposit " + "<span class='highlight'>" + principal + "</span>." + ", <br> at an interest rate of " + "<span class='highlight'>" + rate + "</span>%." + "<br> You will receive an amount of " + "<span class='highlight'>" + interest + "</span>" + ", <br> in the year " + "<span class='highlight'>" + presentYear + "</span>";
+    result.innerHTML="If you deposit " + "<span class='highlight'>" + principal + "</span>." + ",<br/>" + "at an interest rate of" + "<span class='highlight'>" + rate + "</span>."  + ".<br/>" +"You will receive an amount of" + "<span class='highlight'>" + interest + "</span>" + ",<br/>" + "in the year" + "<span class='highlight'>" + year
 }
 
 /* function that reads the value of the range slider and displays it the */
