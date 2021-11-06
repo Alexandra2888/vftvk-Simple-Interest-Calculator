@@ -22,3 +22,6 @@ text-align: center;
 margin:auto;
 }
 
+.highlight {
+    background-color: yellow;
+}
