@@ -1,16 +1,42 @@
 <html>
+    <!DOCTYPE html>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
-
+     <!--class attribute is set to maindiv -->
+<div class="maindiv">
+     <!-- h1 tag for adding title -->
+     <h1>Simple Interest Calculator</h1>
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
+        <!-- slider is added to input text box for range -->
+        Rate <input type="range"  id="rate" min="minval" max="maxval" value="default_val">  <br/>
         No. of Years <input type="number"  id="years">  <br/>
         Interest : <span id="result"></span><br>
+        <!-- span tag is created to show the value selected by the range -->
+        <span id="rate_val">10.25%</span></div>
+         <!-- dropdown box with ten options from to 10 is added -->
+          No. of years <select id="years">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    </select><br/>
+        <!-- Interest : <span id="result"></span><br> -->
+        <button onclick="compute()">Compute Interest</button></body>
+        <!-- an empty span is created and its id is set to 'result' -->
 
-        <button onclick="compute()">Compute</button>
+        <span id="result"></span></br>
+        <!-- copyright message is shown with the help of footer tag at the bottom -->
+        <footer> &#169; This Calculator belongs to Alexandra Moldovan</footer>
+</div>
     </body>
 </html>
